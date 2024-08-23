@@ -1,0 +1,165 @@
+.robot
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 620px;
+    margin-top: 130px;
+}
+.head
+{
+    height: 90px;
+    width: 110px;
+    border-radius: 50% 50% 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 7px;
+    position: relative;
+    animation: movehead 3s infinite;
+    
+}
+.lefteye
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+.righteye
+{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: crimson;
+}
+.body
+{
+    display: flex;
+    
+}
+.lefthand
+{
+    height: 100px;
+    width: 20px;
+    background-color: black;
+    border-radius: 10px;
+    animation: moveleftarm 3s infinite;
+}
+.stomach
+{
+    height: 150px;
+    width: 110px;
+    background-color: black;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    animation: movestomach 3s infinite;
+}
+.righthand
+{
+    height: 100px;
+    width: 20px;
+    background-color: black;
+    border-radius: 10px;
+    animation: moveleftarm 3s infinite;
+}
+.leg
+{
+    display: flex;
+}
+.leftleg
+{
+    height: 100px;
+    width: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 22px;
+    animation: movelegs 3s infinite;
+}
+.rightleg
+{
+    height: 100px;
+    width: 20px;
+    background-color: black;
+    border-radius: 10px;
+    margin-left: 80px;
+    animation: movelegs 3s infinite;
+}
+@keyframes movehead {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes movestomach {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveleftarm {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
+}
+@keyframes movelegs {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+h1{
+    
+    margin-left: 200px;
+}
